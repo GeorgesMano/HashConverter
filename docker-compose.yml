@@ -6,8 +6,12 @@ services:
     container_name: hash-converter
     ports:
       - "5000:5000"
+    # TODO it doesn't save the data locally, something to fix in your App
+    # I doubt this was tested, but if it were, you should have try to delete the pod and restart
     volumes:
       - ./hash_history.json:/app/hash_history.json  # Assurez-vous que le fichier hash_history.json existe dans le répertoire courant
       - ./app:/app  # Assurez-vous que le répertoire app est correctement monté pour le code de l'application
     environment:
       FLASK_ENV: development  # Optionnel : Si vous utilisez Flask en mode développement
+# TODO use a Docker volume instead of local drive
+# check with others for details
