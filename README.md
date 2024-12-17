@@ -55,26 +55,28 @@ Exemple d'interface utilisateur :
 
 ## Commandes Docker ##
 Construire et exécuter l'application
-bash
 Copier le code
+```bash
 docker-compose up --build
+```
 Arrêter l'application
-bash
-Copier le code
+```bash
 docker-compose down
-
+```
 ## Installation ##
 Installez les dépendances :
 N'oubliez pas d'installer le fichier requirement 
+```
 pip install -r requirements.txt
-
+```
 Installation
 Avec Docker
 Clonez ce repository :
+```
 git clone https://github.com/GeorgesMano/HashConverter.git
-
+```
 Construisez et lancez les services avec Docker Compose :
-
+```
 docker-compose up --build
-
+```
 L'API sera disponible à l'adresse suivante : http://localhost:5000
